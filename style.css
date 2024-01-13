@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0px 15px;
+  color: white;
+  background-color: rgb(189, 48, 189);
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+}
+
+.container {
+  max-width: 80vw;
+  margin: auto;
+  min-height: 85vh;
+}
+
+.main-heading{
+  margin: 15px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 18px 0;
+}
+
+input[type="number"],
+select {
+  margin: 10px 0;
+  padding: 5px;
+  border: 2px solid #bd30bd;
+  border-radius: 5px;
+  width: 40vw;
+  font-size: 16px;
+}
+
+.btn {
+  width: 10vw;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: #bd30bd;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.resultCont {
+  display: none;
+}
+
+.img {
+  display: none;
+  text-align: center;
+}
+
+img {
+  width: 13vw;
+}
+
+.resultCont h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+table,
+thead,
+tbody,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  width: 25vw;
+}
+
+footer{
+    height: 5vh;
+    font-size: 11px;
+    background: #bd30bd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:550px) and (max-width:700px){
+  .btn{
+    width: 20vw;
+  }
+
+}
+
+@media screen and (max-width:550px){
+  nav{
+    font-size: 15px;
+  }
+
+  table{
+    font-size: 12px;
+  }
+
+  .btn{
+    width: 25vw;
+  }
+
+
+  select,input[type="number"]{
+    width: 50vw;
+  }
+
+  .main-heading{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+}

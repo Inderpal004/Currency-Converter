@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Currency Converter</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a href="/">Help</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2 class="main-heading">Welcome To Currency Converter</h2>
+      <form>
+        <label for="quantity">Choose Quantity To Convert : </label>
+        <input type="number" name="quantity" />
+        <label for="currency">Choose Currency To Convert :</label>
+        <select name="currency">
+          <option value="INR">Indian Rupee</option>
+          <option value="USD">United States Dollar</option>
+          <option value="EUR">EURO</option>
+          <option value="CNY">Chinese Yuan Renminbi</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="JPY">Japanese</option>
+          <option value="HKD">Hong Kong Dollar</option>
+          <option value="BRL">Brazilian Real</option>
+          <option value="GBP">British Pound Sterling</option>
+          <option value="CHF">Swiss Franc</option>
+          <option value="SGD">Singapore Dollar</option>
+          <option value="ZAR">South African Rand</option>
+          <option value="CAD">Canadian Dollar</option>
+          <option value="AUD">Australian Dollar</option>
+        </select>
+        <button type="submit" id="btn" class="btn">Submit</button>
+      </form>
+
+      <div class="resultCont">
+        <h2>Here is your Converted Value in Different Currencies</h2>
+        <div class="img">
+          <img src="loading.svg" alt="" />
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Currency Code</th>
+              <th>Currency Value</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>Copyright &copy; || All rights Reserved</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
